@@ -1,47 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Rock Paper Scissor</h1>
+  <h1>Rock Paper Scissor</h1>
 
+  <div class="game-area">
     <div class="choices">
-        <div class="choice" id="rock">
-            <img src="./imgs/rock.png" alt="rock">
-        </div>
-
-        <div class="choice" id="paper">
-            <img src="./imgs/paper.png" alt="paper">
-        </div>
-
-        <div class="choice" id="Scissor">
-            <img src="./imgs/scissors.png" alt="Scissor">
-        </div>
+      <div class="choice" id="rock">
+        <img src="./imgs/rock.png" alt="rock">
+      </div>
+      <div class="choice" id="paper">
+        <img src="./imgs/paper.png" alt="paper">
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./imgs/scissors.png" alt="scissors">
+      </div>
     </div>
 
-    <div class="score-board">
-        <div class="score">
-            <p id="userScore">0</p>
-            <p>User</p>
-        </div>
+    <div class="result-area">
+      <div class="user-choice">
+        <h3>Your Choice</h3>
+        <img id="userChoiceImg" src="./imgs/placeholder.webp" alt="Your Choice">
+      </div>
 
-        <div class="score">
-            <p id="compScore">0</p>
-            <p>Comp</p>
-        </div>
+      <div class="vs">
+        <h2>VS</h2>
+      </div>
+
+      <div class="comp-choice">
+        <h3>Computer's Choice</h3>
+        <img id="compChoiceImg" src="./imgs/placeholder.webp" alt="Computer's Choice">
+      </div>
+    </div>
+  </div>
+
+  <div class="score-board">
+    <div class="score">
+      <p id="userScore">0</p>
+      <p>User</p>
     </div>
 
-    <div class="msg-container">
-        <p id="msg">Play your move</p>
+    <div class="score">
+      <p id="compScore">0</p>
+      <p>Comp</p>
     </div>
+  </div>
 
-    <script src="app.js"></script>
+  <div class="msg-container">
+    <p id="msg">Play your move</p>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
